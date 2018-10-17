@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="joeApp">
+
+<head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="code.js"></script>
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+  <nav class="navbar navbar-default" style='background-color: #ea5744;'>
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://18.191.234.158/creative-3-jsmorrow323/#/"  style='color: black; '>DnD Character Creation Guide</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"  style='color: black;'><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#about"  style='color: black;'><i class="fa fa-user" aria-hidden="true"></i> Creation</a></li>
+        <li><a href="#contact"  style='color: black;'><i class="fa fa-question" aria-hidden="true"></i> Learn More</a></li>
+        <li><a href="#dice"  style='color: black;'><i class="fa fa-square" aria-hidden="true"></i> Dice Roller</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main">
+  
+    <div ng-view></div>
+    
+  </div>
+  
+  <footer class="text-center" style='background-color: #e2dcdc; height: 100px; padding-top: 25px;'>
+    <p>Dungeons and Dragons <a href="http://dnd.wizards.com/" style='color: #ea5744;'>Official Webpage</a></p>
+  
+    <p>Created by <a href="http://18.191.234.158/lab-1-portfolio-jsmorrow323/" style='color: #ea5744;'>Joseph Morrow</a></p>
+  </footer>
+  
+</body>
+
+</html>
